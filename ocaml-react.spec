@@ -7,6 +7,7 @@ Group:          Development/Other
 URL:            http://erratique.ch/software/react
 Source0:        http://erratique.ch/software/react/releases/react-%{version}.tbz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
+BuildRequires:  ocaml
 
 %description
 React is an OCaml module for functional reactive programming (FRP).
@@ -31,22 +32,6 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -n react-%{version}
-
-# disable this feature until ocambuild supports building cmxs
-echo \
-'--- src/META~   2009-01-20 04:13:02.000000000 +0100
-+++ src/META    2009-03-01 15:18:56.000000000 +0100
-@@ -2,5 +2,4 @@
- description = "Applicative events and signals for OCaml"
- archive(byte) = "react.cmo"
- archive(native) = "react.cmx"
--archive(plugin,native) = "react.cmxs"
- directory = "+react"' \
-  > react-%{version}-cmxsnotyet.patch
-
-patch -p1 src/META \
-    react-%{version}-cmxsnotyet.patch
-
 
 %build
 ./build
