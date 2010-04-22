@@ -1,5 +1,5 @@
 Name:           ocaml-react
-Version:        0.9.0
+Version:        0.9.1
 Release:        %mkrel 1
 Summary:        OCaml module for Functional Reactive Programming (FRP)
 License:        BSD
@@ -34,6 +34,7 @@ developing applications that use %{name}.
 %setup -q -n react-%{version}
 
 %build
+chmod u+x build
 ./build
 
 %check
