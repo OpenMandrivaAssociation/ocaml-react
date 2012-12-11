@@ -64,3 +64,27 @@ rm -rf %{buildroot}
 %{_libdir}/ocaml/react/react.mli
 %{_libdir}/ocaml/react/react.ml
 
+
+
+%changelog
+* Fri Sep 16 2011 Alexandre Lissy <alissy@mandriva.com> 0.9.2-3
++ Revision: 700028
+- Release bump, rebuilding against latest ocaml
+
+* Wed Oct 06 2010 Funda Wang <fwang@mandriva.org> 0.9.2-2mdv2011.0
++ Revision: 583707
+- rebuild
+
+* Thu Aug 12 2010 Florent Monnier <blue_prawn@mandriva.org> 0.9.2-1mdv2011.0
++ Revision: 569281
+- updated version
+
+* Thu Apr 22 2010 Florent Monnier <blue_prawn@mandriva.org> 0.9.1-1mdv2010.1
++ Revision: 537968
+- updated to version 0.9.1
+
+* Tue Aug 11 2009 Florent Monnier <blue_prawn@mandriva.org> 0.9.0-1mdv2010.0
++ Revision: 414502
+- buildrequires ocaml, and cmxs now supported
+- import ocaml-react
+
