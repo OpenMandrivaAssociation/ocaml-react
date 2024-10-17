@@ -7,7 +7,7 @@ Version:	0.9.4
 Release:	2
 License:	BSD
 Group:		Development/Other
-Url:		http://erratique.ch/software/react
+Url:		https://erratique.ch/software/react
 Source0:	http://erratique.ch/software/react/releases/react-%{version}.tbz
 BuildRequires:	ocaml
 BuildRequires:	ocaml-findlib
